@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class problem13 {
+	public static void main(String[] args){
+		
+		Scanner input =new Scanner(System.in);
+		System.out.println("Enter your Principle");
+		double p = input.nextDouble();
+		System.out.println("Enter your Interest rate per year");
+		double ratePerYear = input.nextDouble();
+		double ratePerMonth=ratePerYear/12;
+		double x=(1+ratePerMonth);
+		double firstMonth=p*x;
+		System.out.println("After First month new balence will be: "+firstMonth);
+		double secondMonth =(p+firstMonth)*x;
+		System.out.println("After second month new balence will be: "+secondMonth);
+		double thirdMonth =(p+secondMonth)*x;
+		System.out.println("After second month new balence will be: "+thirdMonth);
+		double fourthMonth =(p+thirdMonth)*x;
+		System.out.println("After second month new balence will be: "+fourthMonth);
+		double fifthMonth =(p+fourthMonth)*x;
+		System.out.println("After second month new balence will be: "+fifthMonth);
+		double sixthMonth =(p+fifthMonth)*x;
+		System.out.println("After second month new balence will be: "+sixthMonth);
+	}
+	
+}
+
